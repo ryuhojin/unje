@@ -30,7 +30,6 @@ module.exports = merge(common, {
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        minify: TerserPlugin.swcMinify,
         terserOptions: {
           compress: {
             drop_console: true,

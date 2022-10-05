@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.dev.js",
     "prod": "webpack-dev-server --config config/webpack.prod.js",
-    "build:dev": "webpack --config config/webpack.dev.js",
-    "build:prod": "webpack --config config/webpack.prod.js",
+    "build": "webpack --config config/webpack.prod.js",
     "test": "jest --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%"
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "master": "start yarn run dev && start yarn run test"
   },
   "dependencies": {
     "axios": "^0.27.2",
