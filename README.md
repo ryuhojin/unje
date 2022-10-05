@@ -10,3 +10,4 @@
 <strong>API</strong> : Axios<br/>
 <strong>Bundler</strong> : Webpack5<br/>
 <strong>Compiler</strong> : Babel(지금 SWC랑 고민중)<br/>
+<strong>Mock</strong> : MSW(mirage 고려중) <br/>
