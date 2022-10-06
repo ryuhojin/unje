@@ -1,4 +1,6 @@
+
 const MainPage = () => {
-    return <div>류호진</div>
+    return <>
+    </>
 }
 export default MainPage;

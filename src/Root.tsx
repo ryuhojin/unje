@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import MainPage from '@/page/home/MainPage'
+import MainPage from '@/pages/home/MainPage'
 
 const Root = () => {
     return <>

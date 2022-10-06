@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import MainPage from '@/page/home/MainPage';
+import MainPage from '@/pages/home/MainPage';
 
 describe('<MainPage />', () => {
     const mainPage = (props = {}) => {

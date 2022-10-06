@@ -13,12 +13,14 @@
     "master": "start yarn run dev && start yarn run test"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.26",
     "axios": "^0.27.2",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.2",
-    "react-router-dom": "^6.4.1"
+    "react-router-dom": "^6.4.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
