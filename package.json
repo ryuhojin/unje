@@ -13,7 +13,6 @@
     "master": "start yarn run dev && start yarn run test"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.26",
     "axios": "^0.27.2",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",
@@ -32,6 +31,7 @@
     "@types/jest": "^29.1.1",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
     "babel-jest": "^29.1.2",
     "babel-loader": "^8.2.5",
     "core-js": "^3.25.3",
