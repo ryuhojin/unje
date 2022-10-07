@@ -1,6 +1,8 @@
+import PageTemplate from "@/templates/PageTemplate";
 
 const MainPage = () => {
-    return <>
-    </>
+    return <PageTemplate>
+        <h2>dd</h2>
+    </PageTemplate>
 }
 export default MainPage;
