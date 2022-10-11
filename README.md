@@ -9,5 +9,5 @@
 <strong>Status Management</strong> : React Query & Recoil(Jotai/Zustand도 고민중)<br/>
 <strong>API</strong> : Axios<br/>
 <strong>Bundler</strong> : Webpack5<br/>
-<strong>Compiler</strong> : Babel(지금 SWC랑 고민중)<br/>
+<strong>Compiler</strong> : Babel<br/>
 <strong>Mock</strong> : MSW <br/>
