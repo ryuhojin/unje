@@ -1,5 +1,5 @@
 const Core = () => {
-    return <></>
-}
+  return <></>;
+};
 
 export default Core;

@@ -8,7 +8,7 @@ const PageTemplateLayout = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
 `;
 const PageTemplateContainer = styled.main`
-    margin-top:60px;
-    flex-grow:1;
-`
+  margin-top: 60px;
+  flex-grow: 1;
+`;
 export { PageTemplateLayout, PageTemplateContainer };

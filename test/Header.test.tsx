@@ -1,24 +1,26 @@
-import { render } from "@testing-library/react";
 import Header from "@/components/base/Header";
+import useRender from "./libs/useRender";
 
-describe('<Header/>',()=>{
-    const header = (props={})=>{
-        const utils = render(<Header />);
-        const { getByText } = utils;
-        const text = getByText('')
-        return {
-          ...utils,
-          text,
-        };
-    }
+describe("<Header/>", () => {
+  const header = (props = {}) => {
+    
+    const utils = useRender(<Header/>);
 
-    it('matches snapshot',()=>{
-        const { container } = header();
-        expect(container).toMatchSnapshot();
-    })
+    const { getByText } = utils;
+    const text = getByText("asdf");
+    return {
+      ...utils,
+      text,
+    };
+  };
 
-    it('show the props correctly',()=>{
-        const { text } = header();
-        expect(text).toBeTruthy();
-    })
-})
+  it("matches snapshot", () => {
+    const { container } = header();
+    expect(container).toMatchSnapshot();
+  });
+
+  it("show the props correctly", () => {
+    const { text } = header();
+    expect(text).toBeTruthy();
+  });
+});

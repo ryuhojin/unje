@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import MainPage from '@/pages/home/MainPage'
+import MainPage from "@/pages/home/MainPage";
 import Core from "@/containers/base/Core";
 import useTheme from "@/libs/hooks/useTheme";
 
 const Root = () => {
-
   const [theme, onToggle] = useTheme();
   return (
     <>
@@ -30,5 +29,5 @@ const Root = () => {
       </ThemeProvider>
     </>
   );
-}
+};
 export default Root;

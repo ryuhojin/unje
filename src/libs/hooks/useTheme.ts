@@ -2,7 +2,6 @@ import { dark, light } from "@/styles/theme";
 import { useCallback, useMemo, useState } from "react";
 
 const useTheme = () => {
-    
   const isBrowserDarkMode =
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -20,7 +19,6 @@ const useTheme = () => {
   }, [themeMode]);
 
   return [theme, onToggle] as [typeof theme, typeof onToggle];
-
-}
+};
 
 export default useTheme;
