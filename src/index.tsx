@@ -6,7 +6,7 @@ import Root from "@/Root";
 import "@/styles/index.css";
 
 if (process.env.NODE_ENV === "development") {
-  const { worker } = require("./mocks/browser");
+  const { worker } = require("./libs/api/mocks/browser");
   worker.start();
 }
 

@@ -3,5 +3,5 @@ import { mockLogin } from "./resolvers/mockAuth";
 
 
 export const handlers = [
-  rest.post("https://unje.api/login",mockLogin),
+  rest.post("/login",mockLogin),
 ];

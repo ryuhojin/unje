@@ -1,15 +1,34 @@
-import axios, { AxiosRequestConfig } from "axios";
+import apiConfig from "./apiConfig";
 
-const HOST_URL =
-  process.env.NODE_ENV === "development"
-    ? "/"
-    : process.env.PRODUCTION_HOST_URL;
-
-const API_CONFIG: AxiosRequestConfig = {
-  baseURL: HOST_URL,
-  withCredentials: true,
+const service = {
+  get: (url: any, params: any) => {
+    return apiConfig({
+      url,
+      params,
+      method: "GET",
+    }).then((res) => res.data);
+  },
+  post: (url: any, data: any) => {
+    return apiConfig({
+      url,
+      data,
+      method: "POST",
+    }).then((res) => res.data);
+  },
+  delete: (url: any, data: any) => {
+    return apiConfig({
+      url,
+      data,
+      method: "DELETE",
+    }).then((res) => res.data);
+  },
+  put: (url: any, data: any) => {
+    return apiConfig({
+      url,
+      data,
+      method: "PUT",
+    }).then((res) => res.data);
+  },
 };
-
-const service = axios.create(API_CONFIG);
 
 export default service;
